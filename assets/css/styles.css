@@ -108,7 +108,15 @@ section {
 /*----------------------------------------------- HERO section ----------*/
 
 #hero {
-    background-color: #000;
+    background-image: url("../images/bg-hero.png");
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+.intro-text {
+    margin-top: 25%;
+    padding: 2rem;
 }
 
 /*----------------------------------------------- EVERBLADE section -----*/
@@ -116,7 +124,8 @@ section {
 #everblade {
     background-image: url("../images/bg-everblade.png");
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /*----------------------------------------------- MAN OR MANOR section --*/
@@ -140,16 +149,34 @@ section {
 
 /*----------------------------------------------- Media queries ------*/
 
+
+@media screen and (min-width: 576px){
+    #hero {
+        background-size: 80%;
+    }
+}
+
 @media screen and (min-width: 768px){
     button {
         padding: 0.5rem 1rem;
         font-size: 1rem;
+    }
+    #hero {
+        background-size: 50%;
+    }
+    .intro-text {
+        margin-left: 50%;
+        margin-right: 1rem;
     }
 }
 
 @media screen and (min-width: 1200px){
     .column {
         width: 50%;
+    }
+
+    #everblade {
+        background-position: right;
     }
 }
 
