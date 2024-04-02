@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    color: #fafafa;
+    text-shadow: 1px 1px 4px #000;
+}
+
+.page-wrapper {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+#hero {
+    background-color: red;
+}
+
+#everblade {
+    background-color: blue;
+}
+#manormanor {
+    background-color: orange;
+}
+#about {
+    background-color: purple;
+}
