@@ -48,8 +48,9 @@ button,
     cursor: pointer;
     margin-right: 0.5rem;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     box-shadow: 0 0 10px #000;
+    white-space: nowrap;
 }
 
 button:hover,
@@ -61,11 +62,13 @@ button:focus,
     box-shadow: 0 0 10px #aa3333;
 }
 
-iframe {
-    display: block;
+
+iframe{
+    position:relative;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+    aspect-ratio: 16/9;
 }
 
 .social-link {
@@ -95,6 +98,7 @@ header {
     height: 80px;
     width: 100%;
     padding: 12px 2rem;
+    z-index: 1000;
 }
 
 .navbar-brand {
@@ -161,6 +165,16 @@ section {
 
 #about {
     background-color: #000;
+}
+
+/*------------------------------------------------------- Footer -------*/
+
+footer {
+    color: #fafafa;
+    padding: 1rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
 }
 
 /*----------------------------------------------- Utility classes ------*/
