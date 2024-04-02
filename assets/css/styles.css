@@ -5,15 +5,19 @@
     font-family: "Montserrat", sans-serif;
 }
 
+body {
+    background-color: #000;
+    color: #fafafa;
+    overflow-x: hidden;
+}
+
 /*------------------------------------------ General Styling --*/
 
 h1 {
-    color: #fafafa;
     text-shadow: 1px 1px 4px #000;
 }
 
 a {
-    color: #fafafa;
     text-decoration: none;
     font-weight: 600;
     cursor: pointer;
@@ -23,6 +27,42 @@ a:hover,
 a:focus {
     color: #babafa;
     text-decoration: none;
+}
+
+p {
+    color: #fafafa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5rem;
+    color: #fafafa;
+}
+
+button {
+    padding: 0.3rem;
+    border-color: transparent;
+    background-color: #aa3333;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 0 0 10px #000;
+}
+
+button:hover,
+button:focus {
+    background-color: #fababa;
+    color: #3333aa;
+    box-shadow: 0 0 10px #aa3333;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /*------------------------------------------ HEADER --*/
@@ -38,7 +78,7 @@ header {
     font-size: 2rem;
 }
 
-/*------------------------------------------ Page snap scroll layout --*/
+/*------------------------------------------ Layout --*/
 
 .page-wrapper {
     scroll-snap-type: y mandatory;
@@ -54,6 +94,17 @@ section {
     scroll-snap-align: start;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.column {
+    width: 100%;
+    padding: 0 1rem;
+}
+
 /*----------------------------------------------- HERO section ----------*/
 
 #hero {
@@ -63,7 +114,9 @@ section {
 /*----------------------------------------------- EVERBLADE section -----*/
 
 #everblade {
-    background-color: #000;
+    background-image: url("../images/bg-everblade.png");
+    background-position: center;
+    background-repeat: none;
 }
 
 /*----------------------------------------------- MAN OR MANOR section --*/
@@ -77,3 +130,26 @@ section {
 #about {
     background-color: #000;
 }
+
+/*----------------------------------------------- Utility classes ------*/
+
+.fade-bg {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 12px 0 12px 0;
+}
+
+/*----------------------------------------------- Media queries ------*/
+
+@media screen and (min-width: 768px){
+    button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .column {
+        width: 50%;
+    }
+}
+
