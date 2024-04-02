@@ -12,6 +12,32 @@ h1 {
     text-shadow: 1px 1px 4px #000;
 }
 
+a {
+    color: #fafafa;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+a:hover,
+a:focus {
+    color: #babafa;
+    text-decoration: none;
+}
+
+/*------------------------------------------ HEADER --*/
+
+header {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    padding: 12px;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
 /*------------------------------------------ Page snap scroll layout --*/
 
 .page-wrapper {
