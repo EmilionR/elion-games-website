@@ -5,10 +5,14 @@
     font-family: "Montserrat", sans-serif;
 }
 
+/*------------------------------------------ General Styling --*/
+
 h1 {
     color: #fafafa;
     text-shadow: 1px 1px 4px #000;
 }
+
+/*------------------------------------------ Page snap scroll layout --*/
 
 .page-wrapper {
     scroll-snap-type: y mandatory;
@@ -24,16 +28,26 @@ section {
     scroll-snap-align: start;
 }
 
+/*----------------------------------------------- HERO section ----------*/
+
 #hero {
-    background-color: red;
+    background-color: #000;
 }
 
+/*----------------------------------------------- EVERBLADE section -----*/
+
 #everblade {
-    background-color: blue;
+    background-color: #000;
 }
+
+/*----------------------------------------------- MAN OR MANOR section --*/
+
 #manormanor {
-    background-color: orange;
+    background-color: #000;
 }
+
+/*----------------------------------------------- ABOUT US section ------*/
+
 #about {
-    background-color: purple;
+    background-color: #000;
 }
