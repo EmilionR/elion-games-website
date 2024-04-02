@@ -38,7 +38,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #fafafa;
 }
 
-button {
+button,
+.link-button {
     padding: 0.3rem;
     border-color: transparent;
     background-color: #aa3333;
@@ -52,7 +53,9 @@ button {
 }
 
 button:hover,
-button:focus {
+button:focus,
+.link-button:hover,
+.link-button:focus {
     background-color: #fababa;
     color: #3333aa;
     box-shadow: 0 0 10px #aa3333;
@@ -157,7 +160,8 @@ section {
 }
 
 @media screen and (min-width: 768px){
-    button {
+    button,
+    .link-button {
         padding: 0.5rem 1rem;
         font-size: 1rem;
     }
