@@ -33,10 +33,9 @@ a:focus {
   text-decoration: none;
 }
 
-
-
 p {
   color: #fafafa;
+  font-size: 0.9rem;
 }
 
 h1,
@@ -73,12 +72,15 @@ button:focus,
   box-shadow: 0 0 10px #aa3333;
 }
 
+.video-wrapper {
+  text-align: center;
+}
+
 iframe {
-  position: relative;
-  top: 0;
-  left: 0;
+  aspect-ratio: 16 / 9;
   width: 100%;
-  aspect-ratio: 16/9;
+  max-width: 500px;
+  height: auto;
 }
 
 .social-link {
@@ -141,6 +143,7 @@ section {
 .column {
   width: 100%;
   padding: 0 1rem;
+  align-items: center;
 }
 
 /*----------------------------------------------- HERO section ----------*/
@@ -298,6 +301,9 @@ footer {
 /*----------------------------------------------- Media queries ------*/
 
 @media screen and (min-width: 576px) {
+  p {
+    font-size: 1rem;
+  }
   #hero {
     background-position: 50% 20%;
     background-size: 80%;
@@ -320,12 +326,13 @@ footer {
   .hero-container {
     margin-top: 20%;
   }
-}
-
-@media screen and (min-width: 1200px) {
   .column {
     width: 50%;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  
 
   #everblade {
     background-position: right;
