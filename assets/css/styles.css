@@ -146,137 +146,6 @@ section {
   align-items: center;
 }
 
-/*----------------------------------------------- HERO section ----------*/
-
-#hero {
-  background-image: url("../images/bg-hero.png");
-  background-position: 50% 15%;
-  background-repeat: no-repeat;
-  background-size: 90%;
-}
-
-.hero-container {
-  margin-top: 33%;
-  padding: 50px 2rem;
-}
-
-/*----------------------------------------------- EVERBLADE section -----*/
-
-#everblade {
-  background-image: url("../images/bg-everblade.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-/*----------------------------------------------- MAN OR MANOR section --*/
-
-#manormanor {
-  background-color: #000;
-}
-
-/*----------------------------------------------- ABOUT US section ------*/
-
-#about {
-  background-color: #000;
-}
-
-/*----------------------------------------------- Everblade MAIN Section -----*/
-
-#everblade-main {
-  background-image: url("../images/bg-everblade.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.blackout {
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  animation: fade 1200ms linear;
-  position: absolute;
-  opacity: 0;
-}
-
-.player {
-  width: 60%;
-  height: 60%;
-  background-image: url("../images/player.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 16% 20% 0 16%;
-  position: absolute;
-  animation: move 1200ms ease-in;
-  opacity: 0;
-}
-
-.flash {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  margin: 30% 20% 10%;
-  background-color: #babafa;
-  border-radius: 50%;
-  animation: flash 1200ms linear;
-  opacity: 0;
-}
-
-@keyframes move {
-  0% {
-    opacity: 1;
-    width: 1%;
-    height: 1%;
-  }
-
-  30% {
-    width: 60%;
-    height: 60%;
-  }
-  40% {
-    opacity: 1;
-  }
-  41% {
-    opacity: 0;
-  }
-}
-
-@keyframes flash {
-  0% {
-    opacity: 0;
-  }
-
-  10% {
-    opacity: 1%;
-    width: 10px;
-    height: 10px;
-  }
-
-  40% {
-    opacity: 100%;
-    width: 2000px;
-    height: 2000px;
-  }
-  100% {
-    opacity: 0;
-    width: 2000px;
-    height: 2000px;
-  }
-}
-
-@keyframes fade {
-  0% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 1;
-  }
-  41% {
-    opacity: 0;
-  }
-}
-
 /*------------------------------------------------------- Footer -------*/
 
 footer {
@@ -304,10 +173,6 @@ footer {
   p {
     font-size: 1rem;
   }
-  #hero {
-    background-position: 50% 20%;
-    background-size: 80%;
-  }
   .social-link {
     font-size: 2rem;
     margin: 1.5rem;
@@ -320,12 +185,6 @@ footer {
     padding: 0.5rem 1rem;
     font-size: 1rem;
   }
-  #hero {
-    background-size: 50%;
-  }
-  .hero-container {
-    margin-top: 20%;
-  }
   .column {
     width: 50%;
   }
@@ -333,8 +192,4 @@ footer {
 
 @media screen and (min-width: 1200px) {
   
-
-  #everblade {
-    background-position: right;
-  }
 }
