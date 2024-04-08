@@ -172,10 +172,23 @@ iframe {
 /*----------------------------------------------- Media queries ------*/
 
 @media screen and (max-width: 400px) {
-  #sld-btn-1::after, #sld-btn-2::after, #sld-btn-3::after, #sld-btn-4::after{
-    content: " ";
-    padding-left: 20px;
+  #sld-btn-1::after{
+    content: "1";
+    margin: 0 8px;
   }
+  #sld-btn-2::after{
+    content: "2";
+    margin: 0 8px;
+  }
+  #sld-btn-3::after{
+    content: "3";
+    margin: 0 8px;
+  }
+  #sld-btn-4::after{
+    content: "4";
+    margin: 0 8px;
+  }
+
   .carousel {
     margin-top: 40%;
   }
