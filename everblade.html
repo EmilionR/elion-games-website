@@ -29,6 +29,36 @@
         <div class="player"></div>
         <div class="flash"></div>
       </section>
+      <section id="everblade-vids">
+        <div class="carousel">
+          <div class="video-wrapper">
+            <iframe
+            src="https://www.youtube.com/embed/jamcJiLl-y0"
+            frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="video-wrapper">
+            <iframe
+            src="https://www.youtube.com/embed/NTT2y7ww2eM"
+            frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="video-wrapper">
+            <iframe
+            src="https://www.youtube.com/embed/EKEhEMWUm7w"
+            frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="video-wrapper">
+            <iframe
+            src="https://www.youtube.com/embed/DoQPmPTWPo4"
+            frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button id="sld-btn-1" onclick=moveCarousel(0)></button>
+        <button id="sld-btn-2" onclick=moveCarousel(-100)></button>
+        <button id="sld-btn-3" onclick=moveCarousel(-200)></button>
+        <button id="sld-btn-4" onclick=moveCarousel(-300)></button>
+      </div>
+      </section>
       <section id="everblade-one">
         <div class="column">
           <h3>Everblade</h3>
@@ -39,16 +69,6 @@
                   <a class="link-button" href="https://store.steampowered.com/app/1873570/Everblade/" target="_blank">Buy on Steam</a>
                 </div>
         </div>
-                
-                
-      </section>
-      <section id="everblade-two">
-        <div class="video-wrapper">
-          <iframe
-          src="https://www.youtube.com/embed/jamcJiLl-y0?&theme=dark&autohide=2&modestbranding=1&showinfo=0&rel=0"
-          frameborder="0" allowfullscreen></iframe>
-          <a class="link-button" href="https://store.steampowered.com/app/1873570/Everblade/" target="_blank">Buy on Steam</a>
-      </div>
       </section>
     </main>
     <footer>
@@ -72,5 +92,6 @@
         </span>
     </footer>
     </div>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

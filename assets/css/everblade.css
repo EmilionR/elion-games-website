@@ -1,18 +1,3 @@
-
-
-/*------------------------------------------ General Styling --*/
-
-.video-wrapper {
-  text-align: center;
-}
-
-iframe {
-  aspect-ratio: 16 / 9;
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-}
-
 /*----------------------------------------------- Everblade MAIN Section -----*/
 
 #everblade-main {
@@ -109,11 +94,81 @@ iframe {
   }
 }
 
+/*----------------------------------------------- Everblade VIDS Section -----*/
+
+#everblade-vids {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: 10%;
+}
+
+.video-wrapper {
+  width: 100%;
+  padding: 1rem;
+  flex-shrink: 0;
+  transition: 250ms;
+  margin: 0 auto;
+}
+
+iframe {
+  width: 100%;
+  max-width: 680px;
+}
+
+.slider-controls {
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 1rem 2rem 1rem;
+  max-width: 800px;
+  position: absolute;
+  bottom: 20%;
+}
+
+#sld-btn-1::after {
+  content:"Trailer 1";
+}
+
+#sld-btn-2::after {
+  content:"Trailer 2";
+}
+
+#sld-btn-3::after {
+  content:"Features";
+}
+
+#sld-btn-4::after {
+  content:"Gameplay";
+}
 
 /*----------------------------------------------- Media queries ------*/
 
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 400px) {
+  #sld-btn-1::after, #sld-btn-2::after, #sld-btn-3::after, #sld-btn-4::after{
+    content: " ";
+    padding-left: 20px;
+  }
+  .carousel {
+    margin-top: 40%;
+  }
+}
 
+@media screen and (min-width: 576px) {
+  .carousel {
+    margin-top: 1%;
+  }
+  .slider-controls {
+    bottom: 7%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -121,5 +176,7 @@ iframe {
 }
 
 @media screen and (min-width: 1200px) {
-  
+  .carousel {
+    margin-top: 4%;
+  }
 }
