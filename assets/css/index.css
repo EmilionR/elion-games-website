@@ -25,13 +25,6 @@ iframe {
 
 /*----------------------------------------------- EVERBLADE section -----*/
 
-#everblade {
-  background-image: url("../images/bg-everblade.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 /*----------------------------------------------- MAN OR MANOR section --*/
 
 #manormanor {
@@ -59,6 +52,12 @@ iframe {
   }
   .hero-container {
     margin-top: 20%;
+  }
+  #everblade {
+    background-image: url("../images/bg-everblade.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 

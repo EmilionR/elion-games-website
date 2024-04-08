@@ -78,7 +78,7 @@ button:focus,
 
 iframe {
   aspect-ratio: 16 / 9;
-  width: 100%;
+  width: 90%;
   max-width: 500px;
   height: auto;
 }
@@ -132,6 +132,7 @@ section {
   align-items: center;
   scroll-snap-align: start;
   position: relative;
+  padding-bottom: 2rem;
 }
 
 .container {
@@ -172,11 +173,6 @@ footer {
 @media screen and (min-width: 576px) {
   p {
     font-size: 1rem;
-  }
-  .social-link {
-    font-size: 2rem;
-    margin: 1.5rem;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -187,6 +183,10 @@ footer {
   }
   .column {
     width: 50%;
+  }
+  .social-link {
+    font-size: 2rem;
+    margin: 1.5rem;
   }
 }
 
